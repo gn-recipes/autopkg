@@ -14,7 +14,7 @@
         <string>GoogleDriveFileStream</string>
     </dict>
     <key>MinimumVersion</key>
-    <string>0.2.0</string>
+    <string>0.6.0</string>
     <key>ParentRecipe</key>
     <string>com.github.gn-recipes.pkg.GoogleDriveFileStream</string>
     <key>Process</key>
