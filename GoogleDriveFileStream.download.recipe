@@ -13,11 +13,13 @@
         <key>DOWNLOAD_URL</key>
         <string>https://dl.google.com/drive-file-stream/GoogleDriveFileStream.dmg</string>
     </dict>
-    <key>MinimumVersion</key>
-    <string>0.2.0</string>
+        <key>MinimumVersion</key>
+    <string>0.6.0</string>
     <key>Process</key>
     <array>
         <dict>
+            <key>Processor</key>
+            <string>URLDownloader</string>
             <key>Arguments</key>
             <dict>
                 <key>url</key>
@@ -25,8 +27,6 @@
                 <key>filename</key>
                 <string>%NAME%.dmg</string>
             </dict>
-            <key>Processor</key>
-            <string>URLDownloader</string>
         </dict>
         <dict>
             <key>Processor</key>
@@ -38,13 +38,9 @@
             <key>Arguments</key>
             <dict>
                 <key>input_path</key>
-                <string>%pathname%/%NAME%.pkg</string>
-                <key>expected_authority_names</key>
-                <array>
-                    <string>Developer ID Installer: Google, Inc. (EQHXZ8M8AV)</string>
-                    <string>Developer ID Certification Authority</string>
-                    <string>Apple Root CA</string>
-                </array>
+                <string>%pathname%/Skype.app</string>
+                <key>requirement</key>
+                <string>anchor apple generic and identifier "com.google.drivefs" and (certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ or certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */) and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = EQHXZ8M8AV</string>
             </dict>
         </dict>
     </array>
