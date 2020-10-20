@@ -5,7 +5,7 @@
 	<key>Description</key>
 	<string>Downloads latest Slack.</string>
 	<key>Identifier</key>
-	<string>com.github.gn-recipes.download.slack</string>
+	<string>com.github.gn-recipes.download.Slack</string>
 	<key>Input</key>
 	<dict>
 		<key>NAME</key>
@@ -27,7 +27,7 @@
 				<key>url</key>
 				<string>%DOWNLOAD_URL%</string>
 				<key>filename</key>
-				<string>%NAME%.dmg</string>
+				<string>%NAME%.zip</string>
 			</dict>
 		</dict>
 		<dict>
@@ -40,7 +40,7 @@
 			<key>Arguments</key>
 			<dict>
 				<key>archive_path</key>
-				<string>%RECIPE_CACHE_DIR%/downloads/%NAME%.dmg</string>
+				<string>%RECIPE_CACHE_DIR%/downloads/%NAME%.zip</string>
 			</dict>
 		</dict>
 		<dict>
