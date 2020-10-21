@@ -16,7 +16,7 @@
     <key>MinimumVersion</key>
     <string>0.2.0</string>
     <key>ParentRecipe</key>
-    <string>com.github.gn-recipes.pkg.MicrosoftOffice365Suite</string>
+    <string>com.github.gn-recipes.download.MSOfficeMacProduct</string>
     <key>Process</key>
     <array>
         <dict>
