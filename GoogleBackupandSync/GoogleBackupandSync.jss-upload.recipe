@@ -16,7 +16,7 @@
     <key>MinimumVersion</key>
     <string>0.2.0</string>
     <key>ParentRecipe</key>
-    <string>com.github.nstrauss.pkg.BackupandSync</string>
+    <string>com.github.gn-recipes.pkg.BackupandSync</string>
     <key>Process</key>
     <array>
         <dict>
