@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
     <key>Description</key>
-    <string>Downloads latest Google Chrome disk image.</string>
+    <string>Downloads latest Google Chrome enterprise package.</string>
     <key>Identifier</key>
     <string>com.github.gn-recipes.download.googlechrome</string>
     <key>Input</key>
@@ -11,10 +11,10 @@
         <key>NAME</key>
         <string>GoogleChrome</string>
         <key>DOWNLOAD_URL</key>
-        <string>https://dl.google.com/chrome/mac/stable/GGRO/googlechrome.dmg</string>
+        <string>https://dl.google.com/chrome/mac/stable/accept_tos%3Dhttps%253A%252F%252Fwww.google.com%252Fintl%252Fen_ph%252Fchrome%252Fterms%252F%26_and_accept_tos%3Dhttps%253A%252F%252Fpolicies.google.com%252Fterms/googlechrome.pkg</string>
     </dict>
     <key>MinimumVersion</key>
-    <string>0.2.0</string>
+    <string>1.4.1</string>
     <key>Process</key>
     <array>
         <dict>
@@ -25,26 +25,28 @@
                 <key>url</key>
                 <string>%DOWNLOAD_URL%</string>
                 <key>filename</key>
-                <string>%NAME%.dmg</string>
+                <string>GoogleChrome.pkg</string>
             </dict>
         </dict>
         <dict>
             <key>Processor</key>
             <string>EndOfCheckPhase</string>
         </dict>
-        <dict>
-            <key>Processor</key>
-            <string>CodeSignatureVerifier</string>
-            <key>Arguments</key>
-            <dict>
-                <key>input_path</key>
-                <string>%pathname%/Google Chrome.app</string>
-                <key>strict_verification</key>
-                <false/>
-                <key>requirement</key>
-                <string>(identifier "com.google.Chrome" or identifier "com.google.Chrome.beta" or identifier "com.google.Chrome.dev" or identifier "com.google.Chrome.canary") and (certificate leaf = H"85cee8254216185620ddc8851c7a9fc4dfe120ef" or certificate leaf = H"c9a99324ca3fcb23dbcc36bd5fd4f9753305130a")</string>
-            </dict>
-        </dict>
+		<dict>
+			<key>Arguments</key>
+			<dict>
+				<key>expected_authority_names</key>
+				<array>
+					<string>Developer ID Installer: Google LLC (EQHXZ8M8AV)</string>
+					<string>Developer ID Certification Authority</string>
+					<string>Apple Root CA</string>
+				</array>
+				<key>input_path</key>
+				<string>%pathname%</string>
+			</dict>
+			<key>Processor</key>
+			<string>CodeSignatureVerifier</string>
+		</dict>
     </array>
 </dict>
 </plist>
