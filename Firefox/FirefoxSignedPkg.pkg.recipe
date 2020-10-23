@@ -9,20 +9,35 @@ The RELEASE key used in the standard Firefox recipes are not yet supported.
 LOCALE controls the language localization to be downloded.
 Examples include 'en-US', 'de', 'sv-SE', and 'zh-TW'
 See the following URL for possible LOCALE values:
-    http://ftp.mozilla.org/pub/firefox/releases/latest/README.txt
-</string>
+    http://ftp.mozilla.org/pub/firefox/releases/latest/README.txt</string>
 	<key>Identifier</key>
 	<string>com.github.gn-recipes.pkg.FirefoxSignedPkg</string>
 	<key>Input</key>
-	<dict>
-		<key>NAME</key>
-		<string>Firefox</string>
-	</dict>
-	<key>MinimumVersion</key>
-    <string>2.0</string>
-	<key>ParentRecipe</key>
-	<string>com.github.gn-recipes.download.FirefoxSignedPkg</string>
-	<key>Process</key>
-	<array/>
+    <dict>
+        <key>CATEGORY</key>
+        <string>Apps</string>
+        <key>NAME</key>
+        <string>VLC</string>
+    </dict>
+    <key>MinimumVersion</key>
+    <string>02.0</string>
+    <key>ParentRecipe</key>
+    <string>com.github.gn-recipes.pkg.FirefoxSignedPkg</string>
+    <key>Process</key>
+    <array>
+        <dict>
+            <key>Arguments</key>
+            <dict>
+                <key>category</key>
+                <string>%CATEGORY%</string>
+                <key>prod_name</key>
+                <string>%NAME%</string>
+                <key>pkg_path</key>
+                <string>%pkg_path%</string>
+            </dict>
+            <key>Processor</key>
+            <string>JSSImporter</string>
+        </dict>
+    </array>
 </dict>
 </plist>
