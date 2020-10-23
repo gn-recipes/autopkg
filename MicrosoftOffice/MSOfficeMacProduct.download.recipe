@@ -40,8 +40,6 @@ installer for the given CHANNEL. 'latest-standalone' does not support
         <string>1033</string>
         <key>NAME</key>
         <string>MicrosoftOfficeMacProduct</string>
-        <key>DISABLE_CODE_SIGNATURE_VERIFICATION</key>
-        <false />
         <key>PRODUCT</key>
         <string>MicrosoftOfficeMacProduct</string>
         <key>VERSION</key>
