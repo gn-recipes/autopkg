@@ -11,7 +11,7 @@
 		<key>NAME</key>
 		<string>Evernote</string>
 		<key>DOWNLOAD_URL</key>
-		<string>https://evernote.com/download/string>
+		<string>https://evernote.com/download/<string>
 		<key>DISABLE_CODE_SIGNATURE_VERIFICATION</key>
 		<true/>
 	</dict>
