@@ -13,7 +13,7 @@
 		<key>DOWNLOAD_URL</key>
 		<string>https://dl.google.com/drive-file-stream/GoogleDriveFileStream.dmg</string>
 		<key>DISABLE_CODE_SIGNATURE_VERIFICATION</key>
-		<false/>
+		<true/>
 	</dict>
 	<key>MinimumVersion</key>
 	<string>0.2.0</string>
