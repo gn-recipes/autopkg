@@ -2,31 +2,33 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-    <key>Description</key>
-    <string>Downloads latest Google Drive File Stream disk image.</string>
-    <key>Identifier</key>
-    <string>com.github.gn-recipes.download.GoogleDriveFileStream</string>
-    <key>Input</key>
-    <dict>
-        <key>NAME</key>
-        <string>GoogleDriveFileStream</string>
-        <key>DOWNLOAD_URL</key>
-        <string>https://dl.google.com/drive-file-stream/GoogleDriveFileStream.dmg</string>
-    </dict>
-    <key>MinimumVersion</key>
-    <string>0.2.0</string>
-    <key>Process</key>
+	<key>Description</key>
+	<string>Downloads latest Slack.</string>
+	<key>Identifier</key>
+	<string>com.github.gn-recipes.download.GoogleDriveFileStream</string>
+	<key>Input</key>
+	<dict>
+		<key>NAME</key>
+		<string>Slack</string>
+		<key>DOWNLOAD_URL</key>
+		<string>https://dl.google.com/drive-file-stream/GoogleDriveFileStream.dmg</string>
+		<key>DISABLE_CODE_SIGNATURE_VERIFICATION</key>
+		<true/>
+	</dict>
+	<key>MinimumVersion</key>
+	<string>0.2.0</string>
+	<key>Process</key>
     <array>
         <dict>
+            <key>Processor</key>
+            <string>URLDownloader</string>
             <key>Arguments</key>
             <dict>
                 <key>url</key>
                 <string>%DOWNLOAD_URL%</string>
                 <key>filename</key>
-                <string>%NAME%.dmg</string>
+                <string>%NAME%</string>
             </dict>
-            <key>Processor</key>
-            <string>URLDownloader</string>
         </dict>
         <dict>
             <key>Processor</key>
@@ -38,13 +40,9 @@
             <key>Arguments</key>
             <dict>
                 <key>input_path</key>
-                <string>%pathname%/%NAME%.pkg</string>
-                <key>expected_authority_names</key>
-                <array>
-                    <string>Developer ID Installer: Google, Inc. (EQHXZ8M8AV)</string>
-                    <string>Developer ID Certification Authority</string>
-                    <string>Apple Root CA</string>
-                </array>
+                <string>%pathname%/Slack.app</string>
+                <key>requirement</key>
+                <string>identifier "com.google.drivefs" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = EQHXZ8M8AV</string>
             </dict>
         </dict>
     </array>
