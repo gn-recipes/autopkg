@@ -32,6 +32,8 @@ the latest full update for the given CHANNEL.
         <string>1033</string>
         <key>NAME</key>
         <string>MSAutoUpdate</string>
+        <key>DISABLE_CODE_SIGNATURE_VERIFICATION</key>
+        <true/>
         <key>PRODUCT</key>
         <string>AutoUpdate04</string>
         <key>VERSION</key>
