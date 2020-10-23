@@ -21,7 +21,7 @@ See the following URL for possible LOCALE values:
         <string>VLC</string>
     </dict>
     <key>MinimumVersion</key>
-    <string>02.0</string>
+    <string>2.0</string>
     <key>ParentRecipe</key>
     <string>com.github.gn-recipes.pkg.FirefoxSignedPkg</string>
     <key>Process</key>
