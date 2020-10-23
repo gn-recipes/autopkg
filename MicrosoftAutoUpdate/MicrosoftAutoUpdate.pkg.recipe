@@ -5,7 +5,7 @@
 	<key>Description</key>
 	<string>Downloads the current release version of Microsoft AutoUpdate and extracts the version information from the installer package.</string>
 	<key>Identifier</key>
-	<string>ccom.github.gn-recipes.pkg.MicrosoftAutoUpdate</string>
+	<string>com.github.gn-recipes.pkg.MicrosoftAutoUpdate</string>
 	<key>Input</key>
 	<dict>
         <key>VENDOR</key>
