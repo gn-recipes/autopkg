@@ -21,8 +21,22 @@ See the following URL for possible LOCALE values:
 	<key>MinimumVersion</key>
     <string>2.0</string>
 	<key>ParentRecipe</key>
-	<string>com.github.gn-recipes.download.FirefoxSignedPkg</string>
-	<key>Process</key>
-	<array/>
+	<string>com.github.gn-recipes.pkg.FirefoxSignedPkg</string>
+    <key>Process</key>
+    <array>
+        <dict>
+            <key>Arguments</key>
+            <dict>
+                <key>category</key>
+                <string>%CATEGORY%</string>
+                <key>prod_name</key>
+                <string>%NAME%</string>
+                <key>pkg_path</key>
+                <string>%pkg_path%</string>
+            </dict>
+            <key>Processor</key>
+            <string>JSSImporter</string>
+        </dict>
+    </array>
 </dict>
 </plist>
