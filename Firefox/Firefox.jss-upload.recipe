@@ -16,7 +16,7 @@
     <key>MinimumVersion</key>
     <string>2.0</string>
     <key>ParentRecipe</key>
-    <string>com.github.gn-recipes.pkg.Firefox_EN</string>
+    <string>com.github.gn-recipes.pkg.Firefox</string>
     <key>Process</key>
     <array>
         <dict>
