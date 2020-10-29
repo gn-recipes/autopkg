@@ -22,8 +22,10 @@
             <dict>
                 <key>source_pkg</key>
                 <string>%pathname%</string>
+                <key>pkg_path</key>
+                <string>%RECIPE_CACHE_DIR%/%VENDOR%_%SOFTWARETITLE%_%version%.pkg</string>
             </dict>
         </dict>
-    </array>
+	</array>
 </dict>
 </plist>
