@@ -5,14 +5,14 @@
 	<key>Description</key>
 	<string>Uses parent download recipe to download the latest unlicensed Microsoft Office 365 Suite installer package.</string>
 	<key>Identifier</key>
-	<string>com.github.gn-recipes.pkg.MicrosoftOffice365Suite</string>
+	<string>com.github.gn-recipes.pkg.MicrosoftOffice</string>
 	<key>Input</key>
 	<dict>
 	</dict>
 	<key>MinimumVersion</key>
 	<string>1.0.0</string>
 	<key>ParentRecipe</key>
-	<string>com.github.gn-recipes.download.MicrosoftOffice365Suite</string>
+	<string>com.github.gn-recipes.download.MicrosoftOffice</string>
 	<key>Process</key>
 	<array>
         <dict>
