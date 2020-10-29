@@ -3,11 +3,15 @@
 <plist version="1.0">
 <dict>
 	<key>Description</key>
-	<string>Uses parent download recipe to download the latest unlicensed Microsoft Office 365 Suite installer package.</string>
+	<string>Downloads the current release version of Microsoft Office and extracts the version information from the installer package.</string>
 	<key>Identifier</key>
 	<string>com.github.gn-recipes.pkg.MicrosoftOffice</string>
 	<key>Input</key>
 	<dict>
+        <key>VENDOR</key>
+        <string>Microsoft</string>
+        <key>SOFTWARETITLE</key>
+        <string>Office</string>
 	</dict>
 	<key>MinimumVersion</key>
 	<string>1.0.0</string>
