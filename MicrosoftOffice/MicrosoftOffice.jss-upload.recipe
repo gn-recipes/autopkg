@@ -11,7 +11,7 @@
         <key>CATEGORY</key>
         <string>Apps</string>
         <key>NAME</key>
-        <string>MicrosoftOfficeSuite</string>
+        <string>MicrosoftOffice</string>
     </dict>
     <key>MinimumVersion</key>
     <string>1.0.0</string>
