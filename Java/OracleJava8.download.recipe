@@ -11,7 +11,7 @@
         <key>NAME</key>
         <string>OracleJava8JDK</string>
         <key>SEARCH_URL</key>
-        <string>https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html</string>
+        <string>https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html</string>
         <key>SEARCH_PATTERN</key>
         <string><![CDATA[(?P<url>https:\/\/download.oracle.com\/.*?\/jdk-8u[0-9]+-macosx-x64.dmg)]]></string>
         <key>ORACLE_LICENSE_COOKIE</key>
