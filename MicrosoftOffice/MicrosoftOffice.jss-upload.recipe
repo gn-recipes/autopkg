@@ -14,7 +14,7 @@
         <string>MicrosoftOffice</string>
     </dict>
     <key>MinimumVersion</key>
-    <string>1.4</string>
+    <string>1.0.0</string>
     <key>ParentRecipe</key>
     <string>com.github.gn-recipes.download.MicrosoftOffice</string>
     <key>Process</key>
