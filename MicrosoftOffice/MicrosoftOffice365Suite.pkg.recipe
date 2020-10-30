@@ -5,18 +5,20 @@
 	<key>Description</key>
 	<string>Downloads the current release version of Microsoft AutoUpdate and extracts the version information from the installer package.</string>
 	<key>Identifier</key>
-	<string>com.github.gn-recipes.pkg.MicrosoftAutoUpdate</string>
+	<string>com.github.gn-recipes.pkg.MicrosoftOffice365Suite</string>
 	<key>Input</key>
 	<dict>
         <key>VENDOR</key>
         <string>Microsoft</string>
-        <key>SOFTWARETITLE</key>
-        <string>AutoUpdate</string>
+        <key>SOFTWARETITLE1</key>
+        <string>Office</string>
+        <key>SOFTWARETITLE2</key>
+        <string>Suite</string>
 	</dict>
 	<key>MinimumVersion</key>
 	<string>1.0.0</string>
 	<key>ParentRecipe</key>
-	<string>com.github.gn-recipes.download.MicrosoftAutoUpdate</string>
+	<string>com.github.gn-recipes.download.MicrosoftOffice365Suite</string>
 	<key>Process</key>
 	<array>
         <dict>
