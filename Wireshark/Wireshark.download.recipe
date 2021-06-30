@@ -5,7 +5,7 @@
     <key>Description</key>
     <string>Downloads the latest stable version of Wireshark.</string>
     <key>Identifier</key>
-    <string>com.github.autopkg.gn-recipes.download.Wireshark</string>
+    <string>com.github.gn-recipes.download.Wireshark</string>
     <key>Input</key>
     <dict>
         <key>NAME</key>
