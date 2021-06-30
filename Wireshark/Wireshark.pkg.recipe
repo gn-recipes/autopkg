@@ -3,11 +3,11 @@
 <plist version="1.0">
 <dict>
 	<key>ParentRecipe</key>
-	<string>com.github.autopkg.gn-recipes.download.Wireshark</string>
+	<string>com.github.gn-recipes.download.Wireshark</string>
 	<key>Description</key>
 	<string>Downloads the latest version of Wireshark and builds a pkg.</string>
 	<key>Identifier</key>
-	<string>com.github.autopkg.gn-recipes.pkg.Wireshark</string>
+	<string>com.github.gn-recipes.pkg.Wireshark</string>
 	<key>Input</key>
 	<dict>
 		<key>NAME</key>
