@@ -5,7 +5,7 @@
 	<key>Description</key>
 	<string>Uses parent recipe to download latest SublimeText 3 and make PKG</string>
 	<key>Identifier</key>
-	<string>com.gn-recipes.pkg.SublimeText3</string>
+	<string>com.github.gn-recipes.pkg.SublimeText3</string>
 	<key>Input</key>
 	<dict>
 		<key>NAME</key>
