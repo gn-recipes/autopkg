@@ -14,9 +14,9 @@
         <string>MicrosoftOffice</string>
     </dict>
     <key>MinimumVersion</key>
-    <string>1.0.0</string>
+    <string>0.4.0</string>
     <key>ParentRecipe</key>
-    <string>com.github.gn-recipes.download.MicrosoftOffice365Suite</string>
+    <string>com.github.gn-recipes.pkg.MicrosoftOffice365Suite</string>
     <key>Process</key>
     <array>
         <dict>
