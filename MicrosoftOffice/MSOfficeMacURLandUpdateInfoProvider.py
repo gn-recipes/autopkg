@@ -102,6 +102,16 @@ PROD_DICT = {
         "path": "/Applications/Microsoft Defender ATP.app",
         "minimum_os": "10.12",
     },
+    "Edge": {
+        "id": "EDGE01",
+        "path": "/Applications/Microsoft Edge.app",
+        "minimum_os": "10.11",
+    },
+    "Teams": {
+        "id": "TEAM01",
+        "path": "/Applications/Microsoft Teams.app",
+        "minimum_os": "10.10",
+    },
 }
 LOCALE_ID_INFO_URL = "https://msdn.microsoft.com/en-us/goglobal/bb964664.aspx"
 SUPPORTED_VERSIONS = ["latest", "latest-delta", "latest-standalone"]
@@ -112,6 +122,7 @@ CHANNELS = {
     "InsiderFast": "4B2D7701-0A4F-49C8-B4CB-0C2D4043F51F",
 }
 DEFAULT_CHANNEL = "Production"
+NO_TRIGGER_CONDITIONS = ["SkypeForBusiness", "Teams", "Edge"]
 
 
 class MSOfficeMacURLandUpdateInfoProvider(URLGetter):
@@ -210,9 +221,9 @@ class MSOfficeMacURLandUpdateInfoProvider(URLGetter):
     def get_installs_items(self, item):
         """Attempts to parse the Triggers to create an installs item using
         only manifest data, making the assumption that CFBundleVersion and
-        CFBundleShortVersionString are equal. Skip SkypeForBusiness as its
-        xml does not contain a 'Trigger Condition'"""
-        if self.env["product"] != "SkypeForBusiness":
+        CFBundleShortVersionString are equal. Skip SkypeForBusiness, Teams, 
+        and Edge as their xml does not contain a 'Trigger Condition'"""
+        if self.env["product"] not in NO_TRIGGER_CONDITIONS:
             self.sanity_check_expected_triggers(item)
         version = self.get_version(item)
         # Skipping CFBundleShortVersionString because it doesn't contain
@@ -356,8 +367,13 @@ class MSOfficeMacURLandUpdateInfoProvider(URLGetter):
             ]
         elif PROD_DICT[self.env["product"]].get("minimum_update_version"):
             # Put minimum_update_version into installs item as it is specified in PROD_DICT
-            self.output("Adding minimum required version: %s" % PROD_DICT[self.env["product"]].get("minimum_update_version"))
-            pkginfo["installs"][0]["minimum_update_version"] = PROD_DICT[self.env["product"]].get("minimum_update_version")
+            self.output(
+                "Adding minimum required version: %s"
+                % PROD_DICT[self.env["product"]].get("minimum_update_version")
+            )
+            pkginfo["installs"][0]["minimum_update_version"] = PROD_DICT[
+                self.env["product"]
+            ].get("minimum_update_version")
 
         self.env["version"] = self.get_version(item)
         self.env["minimum_os_version"] = pkginfo["minimum_os_version"]
