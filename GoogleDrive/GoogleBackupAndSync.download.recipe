@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>Description</key>
-	<string>Downloads latest GoogleDrive.</string>
+	<string>Downloads latest Google Backup and Sync.</string>
 	<key>Identifier</key>
-	<string>com.github.gn-recipes.download.GoogleDrive</string>
+	<string>com.github.gn-recipes.download.GoogleBackupAndSync</string>
 	<key>Input</key>
 	<dict>
 		<key>NAME</key>
