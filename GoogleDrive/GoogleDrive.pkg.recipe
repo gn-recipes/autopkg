@@ -44,9 +44,9 @@
 			<key>Arguments</key>
 			<dict>
 				<key>destination_path</key>
-				<string>%pkgroot%/Applications/Google Drive.app</string>
+				<string>%pkgroot%/Applications/Backup and Sync.app</string>
 				<key>source_path</key>
-				<string>%pathname%/Google Drive.app</string>
+				<string>%pathname%/Backup and Sync.app</string>
 			</dict>
 			<key>Processor</key>
 			<string>Copier</string>
