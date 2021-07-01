@@ -11,7 +11,7 @@
         <key>CATEGORY</key>
         <string>Apps</string>
         <key>NAME</key>
-        <string>VisualStudioCode</string>
+        <string>Sublime Text</string>
     </dict>
     <key>MinimumVersion</key>
     <string>0.4.0</string>
