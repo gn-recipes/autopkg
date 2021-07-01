@@ -5,7 +5,7 @@
 	<key>Description</key>
 	<string>Downloads the current version of FileZilla. Specify the channel via %NAME%.</string>
 	<key>Identifier</key>
-	<string>com.github.gn-recipes.recipes.FileZilla.download</string>
+	<string>com.github.gn-recipes.FileZilla.download</string>
 	<key>Input</key>
 	<dict>
 		<key>NAME</key>
