@@ -5,7 +5,7 @@
 	<key>Description</key>
 	<string>Downloads the current release version of Sublime Text 3.</string>
 	<key>Identifier</key>
-	<string>com.github.gn-recipes.SublimeText3.download</string>
+	<string>com.github.gn-recipes.download.SublimeText3</string>
 	<key>Input</key>
 	<dict>
 		<key>NAME</key>
