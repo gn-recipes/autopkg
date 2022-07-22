@@ -23,7 +23,7 @@
 				<key>destination_path</key>
 				<string>%RECIPE_CACHE_DIR%/expanded</string>
 				<key>flat_pkg_path</key>
-				<string>%pathname%/Jamf Connect.pkg</string>
+				<string>%pathname%/JamfConnect.pkg</string>
 			</dict>
 		</dict>
 		<dict>
@@ -34,7 +34,7 @@
 				<key>destination_path</key>
 				<string>%RECIPE_CACHE_DIR%/unpack</string>
 				<key>pkg_payload_path</key>
-				<string>%RECIPE_CACHE_DIR%/expanded/Jamf Connect.pkg/Payload</string>
+				<string>%RECIPE_CACHE_DIR%/expanded/JamfConnect.pkg/Payload</string>
 				<key>purge_destination</key>
 				<string>true</string>
 			</dict>
@@ -56,7 +56,7 @@
 			<key>Arguments</key>
 			<dict>
 				<key>source_pkg</key>
-				<string>%pathname%/Jamf Connect.pkg</string>
+				<string>%pathname%/JamfConnect.pkg</string>
 				<key>pkg_path</key>
 				<string>%RECIPE_CACHE_DIR%/%NAME%-%version%.pkg</string>
 			</dict>
