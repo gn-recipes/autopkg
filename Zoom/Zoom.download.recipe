@@ -5,7 +5,7 @@
     <key>Description</key>
     <string>Downloads the latest version of Zoom.</string>
     <key>Identifier</key>
-    <string>com.github.gn-recipes.download.zoomus</string>
+    <string>com.github.gn-recipes.download.zoom</string>
     <key>Input</key>
     <dict>
         <key>NAME</key>
